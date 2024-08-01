@@ -1,0 +1,246 @@
+.banner{
+    width: 450px;height: 240px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 33px 7px rgba(0,0,0,0.45),
+                25px 0px 20px -20px rgba(0,0,0,0.45),
+                0px 25px 20px -20px rgba(0,0,0,0.45),
+                -25px 0px 20px -20px rgba(0,0,0,0.45);
+}
+.background{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.block {
+    position: absolute;
+    width: 450px;height: 240px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.profileimg1{
+    width: 150px;height: 150px;
+    border-radius: 100%;
+    position: absolute;
+    right: 14px;
+    top: 45px;
+}
+
+.profileimg2{
+    width: 150px;height: 150px;
+    border-radius: 100%;
+    position: absolute;
+    left: 14px;top: 43px;
+    background-color: white;
+    border: 2px solid white;
+
+}
+.profileimg4{
+    width: 158px;height: 200px;
+    object-fit:contain;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 100%,0% 0%);
+    position: absolute;
+    right: -15px;
+}
+.profileimg3{
+    width: 150px;height: 150px;
+    object-fit:contain;
+    position: absolute;
+    left: 10px;
+    border-radius: 10px;
+}
+.para{
+    
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.data{
+    width: 250px;
+    height: 240px;
+    color: rgb(21, 43, 167);
+    padding: 0px 10px 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.data2{
+    position: absolute;
+    right: 0px;
+    width: 250px;
+    height: 240px;
+    color: rgb(98, 5, 247);
+    padding: 0px 10px 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.data3{
+    position: absolute;
+    right: 0px;
+    width: 250px;
+    height: 240px;
+    color: rgb(122, 51, 0);
+    padding: 0px 10px 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.edit{
+    width: 20px;height: 20px;
+    position: absolute;right: 5px;top: 5px;
+    padding: 4px;
+    border-radius: 5px;
+    background-color: rgb(216, 216, 216);
+    z-index: 1;
+}
+.edit:hover {
+    background-color: rgb(173, 173, 173);
+    cursor: pointer;
+}
+
+.data4{
+    position: absolute;
+    left: 0px;
+    width: 250px;
+    height: 240px;
+    color: rgb(247, 5, 5);
+    padding: 0px 10px 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.con{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+
+/* form */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    animation: move 0.2s ease;
+    width: max(450px,calc(100vw - 700px));
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0px 0px 33px 7px rgba(0,0,0,0.45),
+                25px 0px 20px -20px rgba(0,0,0,0.45),
+                0px 25px 20px -20px rgba(0,0,0,0.45),
+                -25px 0px 20px -20px rgba(0,0,0,0.45);
+    
+    /* backdrop-filter: blur(5px); */
+}
+.formData{
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form input{
+    width: calc(100% -20px);
+    padding: 10px;
+    border: solid blue;
+    border-width: 0px 0px 0px 4px;
+}
+.form input:focus { outline: none;}
+.form textarea:focus { outline: none;}
+.form textarea{
+    width: calc(100% -20px);
+    height:100px;
+    padding: 10px;
+    border: solid blue;
+    border-width: 0px 0px 0px 4px;
+    text-align: justify;
+    font-size: 15px;
+}
+.form h3{
+    text-align: left;
+    color: blue;
+}
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(219, 219, 219,0.7);
+    z-index: 2;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.editimg{
+    width: 60px;height: 60px;
+    border-radius: 50%;
+}
+.imgcon{
+    display: flex;
+    gap: 10px;
+    border: solid blue;
+    border-width: 0px 0px 0px 4px;
+    padding: 10px;
+    background-color: white;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.submit{
+    padding: 10px;
+    border: 2px solid;
+    color: rgb(23, 23, 255);
+    border-radius: 5px;
+}
+.submit:hover{
+    cursor: pointer;
+    background-color: rgb(23, 23, 255);
+    color: white;
+}
+
+.cancel {
+    padding: 10px;
+    border: 2px solid;
+    color: red;
+    border-radius: 5px;
+}
+.cancel:hover{
+    background-color: red;
+    color: white;
+}
+#select{
+    width: 100%;
+    padding: 10px 20px 10px 10px;
+    border: solid blue;
+    border-width: 0px 0px 0px 4px;
+}
+#option{
+    padding: 10px;
+}
+
+#select:focus { outline: none;}
+@keyframes move {
+    0%{transform: translateY(400px);}
+    100%{transform: translateY(0px);}
+}
