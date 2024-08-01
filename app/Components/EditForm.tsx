@@ -74,8 +74,8 @@ const EditForm: React.FC = () => {
                     <div className={styles.formData}>
                         <div className={styles.imgcon}>
                         {
-                            listImg.map((ele) => {
-                                return(<ImageComp image={ele}/>);
+                            listImg.map((ele,i) => {
+                                return(<ImageComp key={i} image={ele}/>);
                             })
                         }
                         </div>

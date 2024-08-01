@@ -56,7 +56,6 @@
     
     text-align: justify;
     display: -webkit-box;
-    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -83,7 +82,12 @@
     justify-content: center;
     gap: 10px;
 }
-
+.imageContainer {
+    position: relative;
+    width: 100%; /* Full width of its parent container */
+    height: 100%; /* Adjust height as a percentage of the viewport height */
+  }
+  
 .data3{
     position: absolute;
     right: 0px;
