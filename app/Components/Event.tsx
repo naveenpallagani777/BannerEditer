@@ -1,6 +1,7 @@
 'use client';
 import styles from "./styles.module.css"
 import { useListContext } from '../Context/ListContext';
+import Image from "next/image";
 
 interface EditProps {
     data: {
@@ -18,7 +19,7 @@ const EditBanner: React.FC<EditProps> = ({ data }) => {
     const EditHandler = () => {
          updateEditData({index : data.index,state : true,image:data.image});
     }
-    return(<img src="/edit.png" alt="" className={styles.edit} onClick={EditHandler}/>);
+    return(<Image src="/edit.png" width={20} height={20} alt="" className={styles.edit} onClick={EditHandler}/>);
 
 }
 
